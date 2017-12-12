@@ -219,15 +219,19 @@ body
 		display: -ms-flex
 		display: flex
 		align-items: center
-		width: 347px
+		width: 350px
 		border-radius: 40px
 		padding-left: 17px
-		padding-right: 20px
+		padding-right: 18px
 		margin-right: 40px
 		&>i
 			font-size: 27px
 			color: red
 			margin-right: 10px
+		&:hover
+			transition: ease .4s
+			border: 3px solid red
+			cursor: pointer
 	&__search
 		border: 1px silver solid
 		display: inline-block
@@ -237,6 +241,20 @@ body
 		padding-left: 18px
 		&>i
 			margin-left: 115px
+	&__searchbtn
+		border: none
+		display: inline-block
+		background-color: transparent
+		position: relative
+		left: -36px
+		// border-radius: 40px
+		font-size: 12px
+		// padding-right: 18px
+		// padding-left: 18px
+		// &>i
+		// 	margin-left: 115px
+		&:hover
+			color: red
 	&__locationdrop
 		font-size: 21px
 		margin-left: 30px
@@ -252,6 +270,10 @@ body
 		border-left: 1px silver solid
 		>i
 			font-size: 18px
+	&__sportdrop,&__locationdrop
+		&:hover
+			color: red
+			cursor: pointer
 .options
 	font-size: 0
 	margin-top: 68px
@@ -272,6 +294,7 @@ body
 		padding-right: 20px
 		font-size: 21px
 		&:hover
+			transition: ease .2s
 			text-decoration: none
 			color: red
 .gallery
